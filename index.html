@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>Para mi pequeña princesa Pati <3.</strong>
+                        <p>
+                            Holaaaa mi amorcito nomas queria decirte que te amo mucho y gracias por estar
+                            otro dia mas juntitos, deseo en vdd que este nuevo semestre nos vaya super bien a los dos y podamos cumplir
+                            nuestros objetivos juntos, mi niña nunca dudes del gran amor que siento por ti.
+                            Ten un maravilloso dia hoy cariño.
+                    
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+</body>
+</html>
